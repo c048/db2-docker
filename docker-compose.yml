@@ -2,6 +2,7 @@ version: "3.7"
 services:
   db2:
     image: ibmcom/db2
+    privileged: true
     environment: 
       DBNAME: devdb
       LICENSE: accept
@@ -9,4 +10,4 @@ services:
       DB2INST1_PASSWORD: pwd4dev
     ports:
       - target: "50000"
-        published: "50000"
+        published: "50000" 
